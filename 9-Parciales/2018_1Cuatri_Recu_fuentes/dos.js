@@ -4,7 +4,7 @@ function mostrar()
    var descuento;
    var importeFinal;
    importe = document.getElementById('elNombre').value;
-   importe = parset(importe);
+   importe = parseInt(importe);
    importeFinal = parseInt(importeFinal);
    descuento = importe*0.90;
    importeFinal = descuento*1.21;
