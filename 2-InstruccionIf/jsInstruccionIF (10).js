@@ -13,7 +13,7 @@ function mostrar()
 			{
 				alert("APROBO");
 			}
-			if (numeroRandom<=3) 
+			else
 			{
 				alert("Vamos, la proxima se puede"); 	
 			}
