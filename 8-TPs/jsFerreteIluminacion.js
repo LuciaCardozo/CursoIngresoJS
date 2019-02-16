@@ -31,10 +31,32 @@ function CalcularPrecio ()
  		{
  			descuento=0.6;
  		}
- 		else 
+ 		else if(cantidad==5 && marca!="ArgentinaLuz")
  		{
  			descuento=0.7;
  		}
+ 		else if (cantidad==4 && marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+ 		{
+ 			descuento=0.75;
+ 		}
+ 		else if (cantidad==4 && marca!="ArgentinaLuz" && marca!="FelipeLamparas") 
+ 		{
+ 			descuento=0.8;
+ 		}
+ 		else if (cantidad==3 && marca=="ArgentinaLuz")
+ 		{
+ 			descuento=0.85;
+ 		}
+ 		else if (cantidad==3 && marca=="FelipeLamparas")
+ 		{
+ 			descuento=0.90;
+ 		}
+ 		else if (cantidad==3 && marca!="ArgentinaLuz" && marca!="FelipeLamparas")
+ 		{
+ 			descuento=0.95;
+ 		}
+
+
  		
  	}
   	precioDeCompra=cantidad*precioLampara;//
