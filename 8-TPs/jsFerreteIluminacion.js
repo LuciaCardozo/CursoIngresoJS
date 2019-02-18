@@ -66,7 +66,4 @@ function CalcularPrecio ()
  	    	alert("Usted pago "+precioFinal+" de IIBB, siendo "+aumento+" el impuesto que se pago")
  	 	}
  	 
-
-
-
 }
