@@ -8,6 +8,6 @@ function mostrarAumento()
 	var descuento;
 	sueldo = document.getElementById('importe').value;
 	sueldo = parseInt (sueldo);
-	descuento=sueldo*0.75;
+	descuento=sueldo/100*75;
 	document.getElementById('resultado').value=descuento;
 }

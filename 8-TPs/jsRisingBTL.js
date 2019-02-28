@@ -9,5 +9,108 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
+  var edad;
+  var sexo;
+  var estadoCivil;
+  var sueldoBruto;
+  var numeroDeLegajo;
+  var nacionalidad;
+
+
+  edad = prompt("Ingrese su edad");
+  edad = parseInt(edad);
+
+ 		while ((edad<18) || (edad>90))
+  		{
+	  		edad=prompt("Error, ingrese su edad");
+  		}
+
+  			sexo = prompt("Ingrese su sexo con f o m");
+  	
+  			while  ((sexo!="f") && (sexo!="m") && (sexo!="F") && (sexo!="M"))
+  			{
+  				sexo=prompt("Error,ingrese su sexo con f o m");
+  			}
+  				if ((sexo=="f") || (sexo=="F")) 
+  				{
+  					sexo="Femenino.";
+  				}
+  				else if ((sexo=="m") || (sexo=="M"))
+  				{
+  					sexo="Masculino.";
+  				}
+
+    		estadoCivil=prompt("Ingrese su estado civil ej:soltero, casado, divorciado o viudo");
+
+  			while ((estadoCivil!="soltero") && (estadoCivil!="casado") && (estadoCivil!="divorciado") && (estadoCivil!="viudo") &&
+  				   (estadoCivil!="Soltero") && (estadoCivil!="Casado") && (estadoCivil!="Divorciado") && (estadoCivil!="Viudo"))
+  			{
+  				estadoCivil=prompt("Error, ingrese su estado civil ej:soltero, casado, divorciado o viudo");
+  			}
+  				if (estadoCivil=="soltero") 
+  				{
+  					estadoCivil="Soltero.";
+  				}
+  				else if (estadoCivil=="casado")
+  				{
+  					estadoCivil="Casado.";
+  				}
+  				else if (estadoCivil=="divorciado") 
+  				{
+  					estadoCivil="Divorciado.";
+  				}
+  				else if (estadoCivil=="viudo") 
+  				{
+  					estadoCivil="Viudo.";
+  				}
+
+
+  			sueldoBruto=prompt("Ingrese su sueldo, no menor de 8000");
+  			sueldoBruto=parseInt(sueldoBruto);
+
+  			while(sueldoBruto<8000)
+  			{
+  				sueldoBruto=prompt("Ingrese su sueldo, no menor de 8000");
+  			}
+  				if(sueldoBruto>8000)
+  				{
+  					sueldoBruto="$"+sueldoBruto+".-";
+  				}
+
+  			numeroDeLegajo=prompt("Ingrese su numero de legajo");
+  			numeroDeLegajo=parseInt(numeroDeLegajo);
+
+  			while((numeroDeLegajo<1000) || (numeroDeLegajo>9999))
+  			{
+  				numeroDeLegajo=prompt("Error,ingrese su numero de legajo");
+  			}
+
+  			nacionalidad=prompt("Ingrese su nacionalidad con la letra 'A' para (argentino), 'E' para (extranjero) o 'N' para (nacionalizados)");
+
+  			while((nacionalidad!="a") && (nacionalidad!="e") && (nacionalidad!="A") && (nacionalidad!="E") && (nacionalidad!="n") && (nacionalidad!="N"))
+  			{
+  				nacionalidad=prompt("Error, ingrese su nacionalidad con la letra 'A' para (argentinos), 'E' para (extranjeros) o 'N' para (nacionalizados)");
+  			}
+  				if (nacionalidad=="a" || nacionalidad=="A") 
+  				{
+  					nacionalidad="Argentino.";
+  				}
+  				else if(nacionalidad=="e" || nacionalidad=="E")
+  				{
+  					nacionalidad="Extranjero.";
+  				}
+  				else if (nacionalidad=="n" || nacionalidad=="N") 
+  				{
+  					nacionalidad="Nacionalizado.";
+  				}
+
+
+  	
+  	document.getElementById('Edad').value=edad;
+  	document.getElementById('Sexo').value=sexo;
+  	document.getElementById('EstadoCivil').value=estadoCivil;
+  	document.getElementById('Sueldo').value=sueldoBruto;
+  	document.getElementById('Legajo').value=numeroDeLegajo;
+  	document.getElementById('Nacionalidad').value=nacionalidad;
  
 }
