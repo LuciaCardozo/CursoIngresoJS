@@ -34,7 +34,6 @@ function mostrar()
  				notaBaja=nota;
  				sexoBajo=sexo;
  				notaAlta=nota;
- 				sexoAlto=sexo
  			}
  		else if(nota<notaBaja)
  			{

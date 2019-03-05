@@ -77,4 +77,4 @@ function mostrar()
  					"Cantidad de celulares que tiene un valor mayor a $2000.-: "+cantidadDeCelulares+"</br>"+
  					"El celular mas caro es "+mayorPrecioMarca+" de "+mayorPrecioTamaño+" pulgadas, con el valor de "+mayorPrecio+"</br>"+
  					"El celular mas barato es "+menorPrecioMarca+" de "+menorPrecioTamaño+ " pulgadas, con el valor de "+menorPrecio+"</br>");
-}
+} 
